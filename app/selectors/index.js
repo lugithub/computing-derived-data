@@ -1,6 +1,6 @@
 import { createSelector } from 'reselect'
 
-const getVisibilityFilter = (state, props) => props.filter
+const getVisibilityFilter = (state, props) => props.filter || 'SHOW_ALL'
 const getTodos = (state, props) => state.todos
 
 export const getVisibleTodos = createSelector(
